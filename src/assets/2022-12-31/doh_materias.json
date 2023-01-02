@@ -1,0 +1,194 @@
+{
+  "columns": [
+    "Item Name",
+    "Average Price",
+    "Total Market",
+    "Total Sold",
+    "_id",
+    "cost",
+    "currency",
+    "Price/Cost"
+  ],
+  "items": [
+    {
+      "Item Name": "Craftsman's Command Materia X",
+      "Average Price": 14181,
+      "Total Market": 11316581,
+      "Total Sold": 798,
+      "_id": "33940",
+      "cost": 500,
+      "currency": "Purple Crafters' Scrip",
+      "Price/Cost": 28.362
+    },
+    {
+      "Item Name": "Craftsman's Command Materia IX",
+      "Average Price": 9650,
+      "Total Market": 13221413,
+      "Total Sold": 1370,
+      "_id": "33927",
+      "cost": 250,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 38.6
+    },
+    {
+      "Item Name": "Craftsman's Command Materia VIII",
+      "Average Price": 3704,
+      "Total Market": 255644,
+      "Total Sold": 69,
+      "_id": "26737",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 18.52
+    },
+    {
+      "Item Name": "Craftsman's Command Materia VII",
+      "Average Price": 4995,
+      "Total Market": 724378,
+      "Total Sold": 145,
+      "_id": "25196",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 24.975
+    },
+    {
+      "Item Name": "Craftsman's Command Materia VI",
+      "Average Price": 522,
+      "Total Market": 76879,
+      "Total Sold": 147,
+      "_id": "18027",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 2.61
+    },
+    {
+      "Item Name": "Craftsman's Command Materia V",
+      "Average Price": 3343,
+      "Total Market": 1163577,
+      "Total Sold": 348,
+      "_id": "5713",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 16.715
+    },
+    {
+      "Item Name": "Craftsman's Cunning Materia X",
+      "Average Price": 10456,
+      "Total Market": 3502831,
+      "Total Sold": 335,
+      "_id": "33939",
+      "cost": 500,
+      "currency": "Purple Crafters' Scrip",
+      "Price/Cost": 20.912
+    },
+    {
+      "Item Name": "Craftsman's Cunning Materia IX",
+      "Average Price": 6113,
+      "Total Market": 1821682,
+      "Total Sold": 298,
+      "_id": "33926",
+      "cost": 250,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 24.452
+    },
+    {
+      "Item Name": "Craftsman's Cunning Materia VIII",
+      "Average Price": 493,
+      "Total Market": 9374,
+      "Total Sold": 19,
+      "_id": "26736",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 2.465
+    },
+    {
+      "Item Name": "Craftsman's Cunning Materia VII",
+      "Average Price": 9017,
+      "Total Market": 865677,
+      "Total Sold": 96,
+      "_id": "25195",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 45.085
+    },
+    {
+      "Item Name": "Craftsman's Cunning Materia VI",
+      "Average Price": 405,
+      "Total Market": 41374,
+      "Total Sold": 102,
+      "_id": "18026",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 2.025
+    },
+    {
+      "Item Name": "Craftsman's Cunning Materia V",
+      "Average Price": 5668,
+      "Total Market": 697206,
+      "Total Sold": 123,
+      "_id": "5708",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 28.34
+    },
+    {
+      "Item Name": "Craftsman's Competence Materia X",
+      "Average Price": 15898,
+      "Total Market": 3640664,
+      "Total Sold": 229,
+      "_id": "33938",
+      "cost": 500,
+      "currency": "Purple Crafters' Scrip",
+      "Price/Cost": 31.796
+    },
+    {
+      "Item Name": "Craftsman's Competence Materia IX",
+      "Average Price": 7759,
+      "Total Market": 9715179,
+      "Total Sold": 1252,
+      "_id": "33925",
+      "cost": 250,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 31.036
+    },
+    {
+      "Item Name": "Craftsman's Competence Materia VIII",
+      "Average Price": 712,
+      "Total Market": 104051,
+      "Total Sold": 146,
+      "_id": "26735",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 3.56
+    },
+    {
+      "Item Name": "Craftsman's Competence Materia VII",
+      "Average Price": 3561,
+      "Total Market": 306324,
+      "Total Sold": 86,
+      "_id": "25194",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 17.805
+    },
+    {
+      "Item Name": "Craftsman's Competence Materia VI",
+      "Average Price": 234,
+      "Total Market": 11502,
+      "Total Sold": 49,
+      "_id": "18025",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 1.17
+    },
+    {
+      "Item Name": "Craftsman's Competence Materia V",
+      "Average Price": 1834,
+      "Total Market": 319165,
+      "Total Sold": 174,
+      "_id": "5703",
+      "cost": 200,
+      "currency": "White Crafters' Scrip",
+      "Price/Cost": 9.17
+    }
+  ]
+}
