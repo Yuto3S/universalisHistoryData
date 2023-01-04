@@ -60,8 +60,8 @@ export class AppComponent {
               let viewValue = fileName.replace(/_/g, " ");
               this.fileList.push({value: fileName, viewValue: viewValue});
             });
-//             this.selectedFile = this.fileList[0].value;
-//             this.changeFileSelected(this.selectedFile);
+            this.selectedFile = this.fileList[0].value;
+            this.changeFileSelected(this.selectedFile);
           }
         );
       }
