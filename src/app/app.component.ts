@@ -146,7 +146,8 @@ export class AppComponent {
 
         this.FFXIVServers = Object.keys(jsonData["history"]);
         this.FFXIVServers.sort();
-        this.selectedServer = this.FFXIVServers[1];
+        // TODO: Use the sessionStorage to save the favorite/most recent selected Server
+        this.selectedServer = this.FFXIVServers[0];
 
         this.shoppingListTimeframes = Object.keys(jsonData["history"][this.selectedServer]);
         this.selectedTimeFrame = this.shoppingListTimeframes[0];
