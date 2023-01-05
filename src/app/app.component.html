@@ -11,8 +11,29 @@
 <!-- Button to clear selection -->
 <!--<button (click)="clearSelection()">Clear Selection</button>-->
 <mat-form-field appearance="fill">
+  <mat-label>Server</mat-label>
+  <mat-select [(ngModel)]="selectedServer" (ngModelChange)="changeServerSelected($event)">
+    <mat-option *ngFor="let ffxivServer of FFXIVServers" [value]="ffxivServer">{{ffxivServer}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Time Frame in Hours</mat-label>
+  <mat-select [(ngModel)]="selectedTimeFrame" (ngModelChange)="changeSelectedTimeFrame($event)">
+    <mat-option *ngFor="let timeFrame of shoppingListTimeframes" [value]="timeFrame">{{timeFrame}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Selected Date</mat-label>
+  <mat-select [(ngModel)]="selectedDate" (ngModelChange)="changeSelectedDate($event)">
+    <mat-option *ngFor="let availableDate of availableDates" [value]="availableDate">{{availableDate}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
   <mat-label>File information to display in table</mat-label>
-  <mat-select [(ngModel)]="selectedFile" (ngModelChange)="changeFileSelected($event)">
+  <mat-select [(ngModel)]="selectedShoppingList" (ngModelChange)="changeFileSelected($event)">
     <mat-option *ngFor="let file of fileList" [value]="file.value">{{file.viewValue}}</mat-option>
   </mat-select>
 </mat-form-field>
@@ -36,5 +57,5 @@
    [rowSelection]="'multiple'"
    [animateRows]="true"
    (cellClicked)="onCellClicked($event)"
-   *ngIf="selectedFile"
+   *ngIf="selectedShoppingList"
 ></ag-grid-angular>
