@@ -78,6 +78,7 @@ export class AppComponent {
   }
 
   changeServerSelected(newSelectedFFXIVServer: any){
+    // TODO: Try to keep the current timeframe/date/shoppinglist if they exist
     console.log(newSelectedFFXIVServer);
     this.selectedServer = newSelectedFFXIVServer;
 
@@ -102,6 +103,7 @@ export class AppComponent {
 
   changeSelectedTimeFrame(newSelectedTimeFrame: any){
     console.log(newSelectedTimeFrame);
+    // TODO: Try to keep the current date/shoppinglist if they exist
     this.selectedTimeFrame = newSelectedTimeFrame;
 
     this.availableDates = Object.keys(this.fullTreeInfo["history"][this.selectedServer][this.selectedTimeFrame]);
@@ -123,6 +125,7 @@ export class AppComponent {
   changeSelectedDate(newSelectedDate: any){
     console.log(newSelectedDate);
     this.selectedDate = newSelectedDate;
+    // TODO: Try to keep the current shoppinglist if they exist
 
     this.fileList = [];
     this.fullTreeInfo["history"][this.selectedServer][this.selectedTimeFrame][this.selectedDate].sort().forEach(
