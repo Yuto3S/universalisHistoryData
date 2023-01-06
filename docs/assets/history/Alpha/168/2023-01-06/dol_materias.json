@@ -1,1 +1,194 @@
-{"columns": ["Name", "Average Price", "Total Market", "Total Quantity", "cost", "currency", "id", "Price/Cost", "duration", "id", "level", "quantity", "Gil/Venture", "cost", "id", "Price/Cost", "duration", "id", "level", "quantity", "Gil/Venture", "duration", "id", "level", "quantity", "Gil/Venture", "cost", "currency", "id", "Price/Cost", "cost", "currency", "id", "Price/Cost"], "items": [{"Name": "Gatherer's Guerdon Materia X", "Average Price": 19203, "Total Market": 6221949, "Total Quantity": 324, "cost": 500, "currency": "Purple Gatherers' Scrip", "id": 33935}, {"Name": "Gatherer's Guerdon Materia IX", "Average Price": 4856, "Total Market": 3370487, "Total Quantity": 694, "cost": 250, "currency": "White Gatherers' Scrip", "id": 33922}, {"Name": "Gatherer's Guerdon Materia VIII", "Average Price": 2451, "Total Market": 73530, "Total Quantity": 30, "cost": 200, "currency": "White Gatherers' Scrip", "id": 26732}, {"Name": "Gatherer's Guerdon Materia VII", "Average Price": 1282, "Total Market": 44887, "Total Quantity": 35, "cost": 200, "currency": "White Gatherers' Scrip", "id": 25191}, {"Name": "Gatherer's Guerdon Materia VI", "Average Price": 423, "Total Market": 29660, "Total Quantity": 70, "cost": 200, "currency": "White Gatherers' Scrip", "id": 18022}, {"Name": "Gatherer's Guerdon Materia V", "Average Price": 5411, "Total Market": 611475, "Total Quantity": 113, "cost": 200, "currency": "White Gatherers' Scrip", "id": 5688}, {"Name": "Gatherer's Guile Materia X", "Average Price": 16985, "Total Market": 4025637, "Total Quantity": 237, "cost": 500, "currency": "Purple Gatherers' Scrip", "id": 33936}, {"Name": "Gatherer's Guile Materia IX", "Average Price": 8165, "Total Market": 2041490, "Total Quantity": 250, "cost": 250, "currency": "White Gatherers' Scrip", "id": 33923}, {"Name": "Gatherer's Guile Materia VIII", "Average Price": 7274, "Total Market": 50923, "Total Quantity": 7, "cost": 200, "currency": "White Gatherers' Scrip", "id": 26733}, {"Name": "Gatherer's Guile Materia VII", "Average Price": 7990, "Total Market": 287664, "Total Quantity": 36, "cost": 200, "currency": "White Gatherers' Scrip", "id": 25192}, {"Name": "Gatherer's Guile Materia VI", "Average Price": 429, "Total Market": 24911, "Total Quantity": 58, "cost": 200, "currency": "White Gatherers' Scrip", "id": 18023}, {"Name": "Gatherer's Guile Materia V", "Average Price": 5780, "Total Market": 838129, "Total Quantity": 145, "cost": 200, "currency": "White Gatherers' Scrip", "id": 5693}, {"Name": "Gatherer's Grasp Materia X", "Average Price": 7215, "Total Market": 627743, "Total Quantity": 87, "cost": 500, "currency": "Purple Gatherers' Scrip", "id": 33937}, {"Name": "Gatherer's Grasp Materia IX", "Average Price": 5989, "Total Market": 574952, "Total Quantity": 96, "cost": 250, "currency": "White Gatherers' Scrip", "id": 33924}, {"Name": "Gatherer's Grasp Materia VIII", "Average Price": 463, "Total Market": 6489, "Total Quantity": 14, "cost": 200, "currency": "White Gatherers' Scrip", "id": 26734}, {"Name": "Gatherer's Grasp Materia VII", "Average Price": 3867, "Total Market": 228204, "Total Quantity": 59, "cost": 200, "currency": "White Gatherers' Scrip", "id": 25193}, {"Name": "Gatherer's Grasp Materia VI", "Average Price": 432, "Total Market": 22927, "Total Quantity": 53, "cost": 200, "currency": "White Gatherers' Scrip", "id": 18024}, {"Name": "Gatherer's Grasp Materia V", "Average Price": 807, "Total Market": 30672, "Total Quantity": 38, "cost": 200, "currency": "White Gatherers' Scrip", "id": 5698}]}
+{
+  "columns": [
+    "Name",
+    "Average Price",
+    "Total Market",
+    "Total Quantity",
+    "cost",
+    "currency",
+    "id",
+    "Price/Cost"
+  ],
+  "items": [
+    {
+      "Name": "Gatherer's Guerdon Materia X",
+      "Average Price": 19203,
+      "Total Market": 6221949,
+      "Total Quantity": 324,
+      "cost": 500,
+      "currency": "Purple Gatherers' Scrip",
+      "id": 33935,
+      "Price/Cost": 38.406
+    },
+    {
+      "Name": "Gatherer's Guerdon Materia IX",
+      "Average Price": 4856,
+      "Total Market": 3370487,
+      "Total Quantity": 694,
+      "cost": 250,
+      "currency": "White Gatherers' Scrip",
+      "id": 33922,
+      "Price/Cost": 19.424
+    },
+    {
+      "Name": "Gatherer's Guerdon Materia VIII",
+      "Average Price": 2451,
+      "Total Market": 73530,
+      "Total Quantity": 30,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 26732,
+      "Price/Cost": 12.255
+    },
+    {
+      "Name": "Gatherer's Guerdon Materia VII",
+      "Average Price": 1282,
+      "Total Market": 44887,
+      "Total Quantity": 35,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 25191,
+      "Price/Cost": 6.41
+    },
+    {
+      "Name": "Gatherer's Guerdon Materia VI",
+      "Average Price": 423,
+      "Total Market": 29660,
+      "Total Quantity": 70,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 18022,
+      "Price/Cost": 2.115
+    },
+    {
+      "Name": "Gatherer's Guerdon Materia V",
+      "Average Price": 5411,
+      "Total Market": 611475,
+      "Total Quantity": 113,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 5688,
+      "Price/Cost": 27.055
+    },
+    {
+      "Name": "Gatherer's Guile Materia X",
+      "Average Price": 16985,
+      "Total Market": 4025637,
+      "Total Quantity": 237,
+      "cost": 500,
+      "currency": "Purple Gatherers' Scrip",
+      "id": 33936,
+      "Price/Cost": 33.97
+    },
+    {
+      "Name": "Gatherer's Guile Materia IX",
+      "Average Price": 8165,
+      "Total Market": 2041490,
+      "Total Quantity": 250,
+      "cost": 250,
+      "currency": "White Gatherers' Scrip",
+      "id": 33923,
+      "Price/Cost": 32.66
+    },
+    {
+      "Name": "Gatherer's Guile Materia VIII",
+      "Average Price": 7274,
+      "Total Market": 50923,
+      "Total Quantity": 7,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 26733,
+      "Price/Cost": 36.37
+    },
+    {
+      "Name": "Gatherer's Guile Materia VII",
+      "Average Price": 7990,
+      "Total Market": 287664,
+      "Total Quantity": 36,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 25192,
+      "Price/Cost": 39.95
+    },
+    {
+      "Name": "Gatherer's Guile Materia VI",
+      "Average Price": 429,
+      "Total Market": 24911,
+      "Total Quantity": 58,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 18023,
+      "Price/Cost": 2.145
+    },
+    {
+      "Name": "Gatherer's Guile Materia V",
+      "Average Price": 5780,
+      "Total Market": 838129,
+      "Total Quantity": 145,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 5693,
+      "Price/Cost": 28.9
+    },
+    {
+      "Name": "Gatherer's Grasp Materia X",
+      "Average Price": 7215,
+      "Total Market": 627743,
+      "Total Quantity": 87,
+      "cost": 500,
+      "currency": "Purple Gatherers' Scrip",
+      "id": 33937,
+      "Price/Cost": 14.43
+    },
+    {
+      "Name": "Gatherer's Grasp Materia IX",
+      "Average Price": 5989,
+      "Total Market": 574952,
+      "Total Quantity": 96,
+      "cost": 250,
+      "currency": "White Gatherers' Scrip",
+      "id": 33924,
+      "Price/Cost": 23.956
+    },
+    {
+      "Name": "Gatherer's Grasp Materia VIII",
+      "Average Price": 463,
+      "Total Market": 6489,
+      "Total Quantity": 14,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 26734,
+      "Price/Cost": 2.315
+    },
+    {
+      "Name": "Gatherer's Grasp Materia VII",
+      "Average Price": 3867,
+      "Total Market": 228204,
+      "Total Quantity": 59,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 25193,
+      "Price/Cost": 19.335
+    },
+    {
+      "Name": "Gatherer's Grasp Materia VI",
+      "Average Price": 432,
+      "Total Market": 22927,
+      "Total Quantity": 53,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 18024,
+      "Price/Cost": 2.16
+    },
+    {
+      "Name": "Gatherer's Grasp Materia V",
+      "Average Price": 807,
+      "Total Market": 30672,
+      "Total Quantity": 38,
+      "cost": 200,
+      "currency": "White Gatherers' Scrip",
+      "id": 5698,
+      "Price/Cost": 4.035
+    }
+  ]
+}
