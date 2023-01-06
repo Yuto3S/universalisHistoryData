@@ -1,0 +1,39 @@
+{
+  "columns": [
+    "Item Name",
+    "Average Price",
+    "Total Market",
+    "Total Sold",
+    "id"
+  ],
+  "items": [
+    {
+      "Item Name": "Grade 7 Tincture of Strength",
+      "Average Price": 4329,
+      "Total Market": 33444455,
+      "Total Sold": 7724,
+      "id": 37840
+    },
+    {
+      "Item Name": "Grade 7 Tincture of Dexterity",
+      "Average Price": 4686,
+      "Total Market": 19095565,
+      "Total Sold": 4075,
+      "id": 37841
+    },
+    {
+      "Item Name": "Grade 7 Tincture of Intelligence",
+      "Average Price": 4294,
+      "Total Market": 11241863,
+      "Total Sold": 2618,
+      "id": 37843
+    },
+    {
+      "Item Name": "Grade 7 Tincture of Mind",
+      "Average Price": 3666,
+      "Total Market": 12669375,
+      "Total Sold": 3455,
+      "id": 37844
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "columns": [
+    "Item Name",
+    "Average Price",
+    "Total Market",
+    "Total Sold",
+    "cost",
+    "currency",
+    "id",
+    "Price/Cost"
+  ],
+  "items": [
+    {
+      "Item Name": "Savage Aim Materia X",
+      "Average Price": 9283,
+      "Total Market": 6943990,
+      "Total Sold": 748,
+      "id": 33932,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 23.2075
+    },
+    {
+      "Item Name": "Savage Aim Materia IX",
+      "Average Price": 1769,
+      "Total Market": 2260191,
+      "Total Sold": 1277,
+      "id": 33919,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 11.793333333333333
+    },
+    {
+      "Item Name": "Savage Aim Materia VIII",
+      "Average Price": 1172,
+      "Total Market": 389364,
+      "Total Sold": 332,
+      "id": 26729,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 2.93
+    },
+    {
+      "Item Name": "Savage Aim Materia VII",
+      "Average Price": 172,
+      "Total Market": 49507,
+      "Total Sold": 287,
+      "id": 25188,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 1.1466666666666667
+    },
+    {
+      "Item Name": "Savage Aim Materia VI",
+      "Average Price": 765,
+      "Total Market": 166952,
+      "Total Sold": 218,
+      "id": 18019,
+      "cost": 400,
+      "currency": "Centurio Seals",
+      "Price/Cost": 1.9125
+    },
+    {
+      "Item Name": "Savage Aim Materia V",
+      "Average Price": 193,
+      "Total Market": 134488,
+      "Total Sold": 696,
+      "id": 5673,
+      "cost": 1000,
+      "currency": "NOT AVAILABLE",
+      "Price/Cost": 0.193
+    },
+    {
+      "Item Name": "Savage Might Materia X",
+      "Average Price": 10124,
+      "Total Market": 4110736,
+      "Total Sold": 406,
+      "id": 33933,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 25.31
+    },
+    {
+      "Item Name": "Savage Might Materia IX",
+      "Average Price": 1712,
+      "Total Market": 1601451,
+      "Total Sold": 935,
+      "id": 33920,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 11.413333333333334
+    },
+    {
+      "Item Name": "Savage Might Materia VIII",
+      "Average Price": 622,
+      "Total Market": 196759,
+      "Total Sold": 316,
+      "id": 26730,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 1.555
+    },
+    {
+      "Item Name": "Savage Might Materia VII",
+      "Average Price": 168,
+      "Total Market": 47787,
+      "Total Sold": 283,
+      "id": 25189,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 1.12
+    },
+    {
+      "Item Name": "Savage Might Materia VI",
+      "Average Price": 1844,
+      "Total Market": 112528,
+      "Total Sold": 61,
+      "id": 18020,
+      "cost": 400,
+      "currency": "Centurio Seals",
+      "Price/Cost": 4.61
+    },
+    {
+      "Item Name": "Savage Might Materia V",
+      "Average Price": 152,
+      "Total Market": 74733,
+      "Total Sold": 491,
+      "id": 5678,
+      "cost": 1000,
+      "currency": "NOT AVAILABLE",
+      "Price/Cost": 0.152
+    },
+    {
+      "Item Name": "Heavens' Eye Materia X",
+      "Average Price": 9687,
+      "Total Market": 11547863,
+      "Total Sold": 1192,
+      "id": 33931,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 24.2175
+    },
+    {
+      "Item Name": "Heavens' Eye Materia IX",
+      "Average Price": 2272,
+      "Total Market": 4569111,
+      "Total Sold": 2011,
+      "id": 33918,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 15.146666666666667
+    },
+    {
+      "Item Name": "Heavens' Eye Materia VIII",
+      "Average Price": 848,
+      "Total Market": 160450,
+      "Total Sold": 189,
+      "id": 26728,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 2.12
+    },
+    {
+      "Item Name": "Heavens' Eye Materia VII",
+      "Average Price": 169,
+      "Total Market": 29348,
+      "Total Sold": 173,
+      "id": 25187,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 1.1266666666666667
+    },
+    {
+      "Item Name": "Heavens' Eye Materia VI",
+      "Average Price": 1089,
+      "Total Market": 127444,
+      "Total Sold": 117,
+      "id": 18018,
+      "cost": 400,
+      "currency": "Centurio Seals",
+      "Price/Cost": 2.7225
+    },
+    {
+      "Item Name": "Heavens' Eye Materia V",
+      "Average Price": 141,
+      "Total Market": 30401,
+      "Total Sold": 215,
+      "id": 5668,
+      "cost": 1000,
+      "currency": "NOT AVAILABLE",
+      "Price/Cost": 0.141
+    },
+    {
+      "Item Name": "Quickarm Materia X",
+      "Average Price": 1477,
+      "Total Market": 175873,
+      "Total Sold": 119,
+      "id": 33941,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 3.6925
+    },
+    {
+      "Item Name": "Quickarm Materia IX",
+      "Average Price": 560,
+      "Total Market": 356274,
+      "Total Sold": 636,
+      "id": 33928,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 3.7333333333333334
+    },
+    {
+      "Item Name": "Quickarm Materia VIII",
+      "Average Price": 1087,
+      "Total Market": 36969,
+      "Total Sold": 34,
+      "id": 26738,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 2.7175
+    },
+    {
+      "Item Name": "Quickarm Materia VII",
+      "Average Price": 167,
+      "Total Market": 31925,
+      "Total Sold": 191,
+      "id": 25197,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 1.1133333333333333
+    },
+    {
+      "Item Name": "Quickarm Materia VI",
+      "Average Price": 265,
+      "Total Market": 13008,
+      "Total Sold": 49,
+      "id": 18028,
+      "cost": 400,
+      "currency": "Centurio Seals",
+      "Price/Cost": 0.6625
+    },
+    {
+      "Item Name": "Quickarm Materia V",
+      "Average Price": 155,
+      "Total Market": 32351,
+      "Total Sold": 208,
+      "id": 5718,
+      "cost": 1000,
+      "currency": "NOT AVAILABLE",
+      "Price/Cost": 0.155
+    },
+    {
+      "Item Name": "Quicktongue Materia X",
+      "Average Price": 2519,
+      "Total Market": 332541,
+      "Total Sold": 132,
+      "id": 33942,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 6.2975
+    },
+    {
+      "Item Name": "Quicktongue Materia IX",
+      "Average Price": 523,
+      "Total Market": 337528,
+      "Total Sold": 645,
+      "id": 33929,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 3.486666666666667
+    },
+    {
+      "Item Name": "Quicktongue Materia VIII",
+      "Average Price": 913,
+      "Total Market": 52080,
+      "Total Sold": 57,
+      "id": 26739,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 2.2825
+    },
+    {
+      "Item Name": "Quicktongue Materia VII",
+      "Average Price": 171,
+      "Total Market": 65318,
+      "Total Sold": 381,
+      "id": 25198,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 1.14
+    },
+    {
+      "Item Name": "Quicktongue Materia VI",
+      "Average Price": 529,
+      "Total Market": 52418,
+      "Total Sold": 99,
+      "id": 18029,
+      "cost": 400,
+      "currency": "Centurio Seals",
+      "Price/Cost": 1.3225
+    },
+    {
+      "Item Name": "Quicktongue Materia V",
+      "Average Price": 186,
+      "Total Market": 40545,
+      "Total Sold": 217,
+      "id": 5723,
+      "cost": 1000,
+      "currency": "NOT AVAILABLE",
+      "Price/Cost": 0.186
+    },
+    {
+      "Item Name": "Battledance Materia X",
+      "Average Price": 1122,
+      "Total Market": 125758,
+      "Total Sold": 112,
+      "id": 33934,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 2.805
+    },
+    {
+      "Item Name": "Battledance Materia IX",
+      "Average Price": 498,
+      "Total Market": 225504,
+      "Total Sold": 452,
+      "id": 33921,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 3.32
+    },
+    {
+      "Item Name": "Battledance Materia VIII",
+      "Average Price": 395,
+      "Total Market": 9886,
+      "Total Sold": 25,
+      "id": 26731,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 0.9875
+    },
+    {
+      "Item Name": "Battledance Materia VII",
+      "Average Price": 179,
+      "Total Market": 40419,
+      "Total Sold": 225,
+      "id": 25190,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 1.1933333333333334
+    },
+    {
+      "Item Name": "Battledance Materia VI",
+      "Average Price": 537,
+      "Total Market": 12366,
+      "Total Sold": 23,
+      "id": 18021,
+      "cost": 400,
+      "currency": "Centurio Seals",
+      "Price/Cost": 1.3425
+    },
+    {
+      "Item Name": "Battledance Materia V",
+      "Average Price": 138,
+      "Total Market": 10489,
+      "Total Sold": 76,
+      "id": 5683,
+      "cost": 1000,
+      "currency": "NOT AVAILABLE",
+      "Price/Cost": 0.138
+    },
+    {
+      "Item Name": "Piety Materia X",
+      "Average Price": 1232,
+      "Total Market": 230437,
+      "Total Sold": 187,
+      "id": 33930,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 3.08
+    },
+    {
+      "Item Name": "Piety Materia IX",
+      "Average Price": 498,
+      "Total Market": 175543,
+      "Total Sold": 352,
+      "id": 33917,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 3.32
+    },
+    {
+      "Item Name": "Piety Materia VIII",
+      "Average Price": 180,
+      "Total Market": 5610,
+      "Total Sold": 31,
+      "id": 26727,
+      "cost": 400,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 0.45
+    },
+    {
+      "Item Name": "Piety Materia VII",
+      "Average Price": 167,
+      "Total Market": 33933,
+      "Total Sold": 202,
+      "id": 25186,
+      "cost": 150,
+      "currency": "Sack of Nuts",
+      "Price/Cost": 1.1133333333333333
+    },
+    {
+      "Item Name": "Piety Materia VI",
+      "Average Price": 218,
+      "Total Market": 7443,
+      "Total Sold": 34,
+      "id": 18011,
+      "cost": 400,
+      "currency": "Centurio Seals",
+      "Price/Cost": 0.545
+    },
+    {
+      "Item Name": "Piety Materia V",
+      "Average Price": 139,
+      "Total Market": 27009,
+      "Total Sold": 193,
+      "id": 5633,
+      "cost": 1000,
+      "currency": "NOT AVAILABLE",
+      "Price/Cost": 0.139
+    }
+  ]
+}
