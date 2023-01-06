@@ -1,12 +1,21 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Inject } from '@angular/core';
 import { AgGridAngular } from 'ag-grid-angular';
 import { CellClickedEvent, ColDef, GridReadyEvent } from 'ag-grid-community';
 import { Observable } from 'rxjs';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 interface FileToDisplay {
   value: string;
   viewValue: string;
+}
+
+export interface DialogData {
+  averagePrice: number;
+  name: string;
+  totalMarket: number;
+  totalSold: number;
+  id: number;
 }
 
 @Component({
@@ -20,7 +29,7 @@ export class AppComponent {
     sortable: true,
     filter: true,
     resizable: true,
-  };
+  }
   public rowData$?: any[];
   fileList: FileToDisplay[] = [];
   selectedItem?: {
@@ -57,6 +66,7 @@ export class AppComponent {
         this.columnDefs = [];
         jsonData["columns"].map((element: any) => this.columnDefs.push({field: element}));
         this.rowData$ = jsonData["items"];
+              console.log(this.columnDefs);
       }
     );
   }
@@ -138,8 +148,9 @@ export class AppComponent {
     this.selectedShoppingList = this.fileList[0].value;
     this.updateTableData();
   }
+//   constructor(public dialog: MatDialog) {}
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public dialog: MatDialog) {}
 
   ngOnInit() {
     fetch(`assets/history_tree.json`).then(res => res.json()).then(
@@ -183,9 +194,21 @@ export class AppComponent {
   onCellClicked( e: CellClickedEvent): void {
     this.selectedItem = {
       data: e.data,
-      linkHref: `https://universalis.app/market/${e.data['_id']}`,
+      linkHref: `https://universalis.app/market/${e.data['id']}`,
       linkDisplayedText: e.data['Item Name']
     }
+
+    console.log(e.data);
+
+      const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+        data: {
+          averagePrice: e.data["Average Price"],
+          name: e.data["Item Name"],
+          totalMarket: e.data["Total Market"],
+          totalSold: e.data["Total Sold"],
+          id: e.data["id"]
+        },
+      });
   }
 
 //   (click)="onSelect(hero)"
@@ -197,5 +220,20 @@ export class AppComponent {
 
   openDialog() {
     console.log("open dialog");
+  }
+}
+
+@Component({
+  selector: 'dialog-overview-example-dialog',
+  templateUrl: 'dialog-overview-example-dialog.html',
+})
+export class DialogOverviewExampleDialog {
+  constructor(
+    public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData,
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 }
