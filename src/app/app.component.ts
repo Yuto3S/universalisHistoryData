@@ -61,7 +61,7 @@ export class AppComponent {
   @ViewChild(AgGridAngular) agGrid!: AgGridAngular;
 
   updateTableData() {
-    fetch(`assets/history/${this.selectedServer}/${this.selectedTimeFrame}/${this.selectedDate}/${this.selectedShoppingList}`).then(res => res.json()).then(
+    fetch(`https://raw.githubusercontent.com/Yuto3S/universalisHistoryDataGenerator/main/assets/generated/history/${this.selectedServer}/${this.selectedTimeFrame}/${this.selectedDate}/${this.selectedShoppingList}`).then(res => res.json()).then(
       jsonData => {
         this.columnDefs = [];
         jsonData["columns"].map((element: any) => this.columnDefs.push({field: element}));
@@ -78,13 +78,6 @@ export class AppComponent {
     console.log(newSelectedFile);
     console.log(this.selectedDate);
     this.updateTableData();
-//     fetch(`assets/history/${this.selectedServer}/${this.selectedTimeFrame}/${this.selectedDate}/${this.selectedShoppingList}`).then(res => res.json()).then(
-//       jsonData => {
-//         this.columnDefs = [];
-//         jsonData["columns"].map((element: any) => this.columnDefs.push({field: element}));
-//         this.rowData$ = jsonData["items"];
-//       }
-//     );
   }
 
   changeServerSelected(newSelectedFFXIVServer: any){
@@ -153,7 +146,7 @@ export class AppComponent {
   constructor(private http: HttpClient, public dialog: MatDialog) {}
 
   ngOnInit() {
-    fetch(`assets/history_tree.json`).then(res => res.json()).then(
+    fetch(`https://raw.githubusercontent.com/Yuto3S/universalisHistoryDataGenerator/main/assets/generated/history_tree.json`).then(res => res.json()).then(
       jsonData => {
         console.log(jsonData);
         this.fullTreeInfo = jsonData;
