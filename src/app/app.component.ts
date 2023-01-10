@@ -84,12 +84,20 @@ export class AppComponent {
     // TODO: Try to keep the current timeframe/date/shoppinglist if they exist
     console.log(newSelectedFFXIVServer);
     this.selectedServer = newSelectedFFXIVServer;
+    localStorage.setItem('FFXIVSelectedServer', this.selectedServer);
 
     this.shoppingListTimeframes = Object.keys(this.fullTreeInfo["history"][this.selectedServer]);
     this.selectedTimeFrame = this.shoppingListTimeframes[0];
 
     this.availableDates = Object.keys(this.fullTreeInfo["history"][this.selectedServer][this.selectedTimeFrame]);
-    this.availableDates.sort();
+            this.availableDates.sort(function(a: string, b: string) {
+          // Folders have the date written in a format YYYY-MM-DD
+          // Potentially could add -HH-MM-SS in a future improvement, but this should be backward compatible as all new
+          // folders will be created with this format too.
+          a = a.split('-').join('');
+          b = b.split('-').join('');
+          return a > b ? -1 : a < b ? 1 : 0;
+        });
     this.selectedDate = this.availableDates[0];
 
     this.fileList = [];
@@ -110,7 +118,14 @@ export class AppComponent {
     this.selectedTimeFrame = newSelectedTimeFrame;
 
     this.availableDates = Object.keys(this.fullTreeInfo["history"][this.selectedServer][this.selectedTimeFrame]);
-    this.availableDates.sort();
+            this.availableDates.sort(function(a: string, b: string) {
+          // Folders have the date written in a format YYYY-MM-DD
+          // Potentially could add -HH-MM-SS in a future improvement, but this should be backward compatible as all new
+          // folders will be created with this format too.
+          a = a.split('-').join('');
+          b = b.split('-').join('');
+          return a > b ? -1 : a < b ? 1 : 0;
+        });
     this.selectedDate = this.availableDates[0];
 
     this.fileList = [];
@@ -155,12 +170,16 @@ export class AppComponent {
         this.FFXIVServers.sort();
         // TODO: Use the sessionStorage to save the favorite/most recent selected Server
         this.selectedServer = this.FFXIVServers[0];
+        if(localStorage.getItem('FFXIVSelectedServer')){
+          this.selectedServer = localStorage.getItem('FFXIVSelectedServer')!;
+        } else {
+          localStorage.setItem('FFXIVSelectedServer', this.selectedServer);
+        }
 
         this.shoppingListTimeframes = Object.keys(jsonData["history"][this.selectedServer]);
         this.selectedTimeFrame = this.shoppingListTimeframes[0];
 
         this.availableDates = Object.keys(jsonData["history"][this.selectedServer][this.selectedTimeFrame]);
-        console.log(this.availableDates);
         this.availableDates.sort(function(a: string, b: string) {
           // Folders have the date written in a format YYYY-MM-DD
           // Potentially could add -HH-MM-SS in a future improvement, but this should be backward compatible as all new
