@@ -66,9 +66,51 @@ export class AppComponent {
         this.columnDefs = [];
         jsonData["columns"].map((element: any) => this.columnDefs.push({field: element}));
         this.rowData$ = jsonData["items"];
-              console.log(this.columnDefs);
+
+        this.columnDefs[1] = {
+          field: "Average Price",
+          cellStyle: params => {
+            let averageList = this.getAverageItemInfoList(jsonData["items"], "Average Price");
+            let min = Math.min(...averageList);
+            let max = Math.max(...averageList);
+            let weight = (params.value - min)/(max - min);
+            let green = weight * 255;
+            return { backgroundColor: `rgb(0, ${green}, 0, 0.5)` };
+          }
+        }
+        this.columnDefs[2] = {
+          field: "Total Market",
+          cellStyle: params => {
+            let averageList = this.getAverageItemInfoList(jsonData["items"], "Total Market");
+            let min = Math.min(...averageList);
+            let max = Math.max(...averageList);
+            let weight = (params.value - min)/(max - min);
+            let green = weight * 255;
+            return { backgroundColor: `rgb(0, ${green}, 0, 0.5)` };
+          }
+        }
+        this.columnDefs[3] = {
+          field: "Total Quantity",
+          cellStyle: params => {
+            let averageList = this.getAverageItemInfoList(jsonData["items"], "Total Quantity");
+            let min = Math.min(...averageList);
+            let max = Math.max(...averageList);
+            let weight = (params.value - min)/(max - min);
+            let green = weight * 255;
+            return { backgroundColor: `rgb(0, ${green}, 0, 0.5)` };
+          }
+        }
       }
     );
+  }
+
+  getAverageItemInfoList(items: any, attributeToSelect: string){
+    var averageItemInfo: number[] = [];
+    items.forEach((item: any) => {
+      averageItemInfo.push(item[attributeToSelect])
+    })
+    console.log(averageItemInfo);
+    return averageItemInfo;
   }
 
 
