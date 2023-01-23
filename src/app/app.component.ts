@@ -87,7 +87,7 @@ export class AppComponent {
     localStorage.setItem('FFXIVSelectedServer', this.selectedServer);
 
     this.shoppingListTimeframes = Object.keys(this.fullTreeInfo["history"][this.selectedServer]);
-    this.selectedTimeFrame = this.shoppingListTimeframes[0];
+    this.selectedTimeFrame = this.shoppingListTimeframes[1]; // Should be "24" by default
 
     this.availableDates = Object.keys(this.fullTreeInfo["history"][this.selectedServer][this.selectedTimeFrame]);
             this.availableDates.sort(function(a: string, b: string) {
@@ -177,7 +177,7 @@ export class AppComponent {
         }
 
         this.shoppingListTimeframes = Object.keys(jsonData["history"][this.selectedServer]);
-        this.selectedTimeFrame = this.shoppingListTimeframes[0];
+        this.selectedTimeFrame = this.shoppingListTimeframes[1]; // Should be "24" by default
 
         this.availableDates = Object.keys(jsonData["history"][this.selectedServer][this.selectedTimeFrame]);
         this.availableDates.sort(function(a: string, b: string) {
