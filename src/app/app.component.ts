@@ -109,12 +109,12 @@ export class AppComponent {
     items.forEach((item: any) => {
       averageItemInfo.push(item[attributeToSelect])
     })
-    console.log(averageItemInfo);
     return averageItemInfo;
   }
 
 
   changeFileSelected(newSelectedFile: any) {
+    localStorage.setItem('FFXIVSelectedShoppingList', newSelectedFile);
     this.selectedShoppingList = newSelectedFile;
     console.log("ok");
     console.log(newSelectedFile);
@@ -150,8 +150,28 @@ export class AppComponent {
       }
     );
 
-    this.selectedShoppingList = this.fileList[0].value;
+    this.getMaybeUpdateSelectedShoppingList();
     this.updateTableData();
+  }
+
+  getMaybeUpdateSelectedShoppingList(){
+    this.selectedShoppingList = this.fileList[0].value;
+    if(localStorage.getItem('FFXIVSelectedShoppingList')){
+      let fileExists = false;
+      this.fileList.forEach((fileName: any) => {
+        if (fileName.value == localStorage.getItem('FFXIVSelectedShoppingList')){
+          fileExists = true;
+        }
+      });
+
+      if(fileExists){
+        this.selectedShoppingList = localStorage.getItem('FFXIVSelectedShoppingList')!;
+      } else {
+        localStorage.setItem('FFXIVSelectedShoppingList', this.selectedShoppingList);
+      }
+    } else {
+      localStorage.setItem('FFXIVSelectedShoppingList', this.selectedShoppingList);
+    }
   }
 
   changeSelectedTimeFrame(newSelectedTimeFrame: any){
@@ -178,7 +198,8 @@ export class AppComponent {
       }
     );
 
-    this.selectedShoppingList = this.fileList[0].value;
+    this.getMaybeUpdateSelectedShoppingList();
+
     this.updateTableData();
   }
 
@@ -195,7 +216,8 @@ export class AppComponent {
       }
     );
 
-    this.selectedShoppingList = this.fileList[0].value;
+    this.getMaybeUpdateSelectedShoppingList();
+
     this.updateTableData();
   }
 //   constructor(public dialog: MatDialog) {}
@@ -210,7 +232,6 @@ export class AppComponent {
 
         this.FFXIVServers = Object.keys(jsonData["history"]);
         this.FFXIVServers.sort();
-        // TODO: Use the sessionStorage to save the favorite/most recent selected Server
         this.selectedServer = this.FFXIVServers[0];
         if(localStorage.getItem('FFXIVSelectedServer')){
           this.selectedServer = localStorage.getItem('FFXIVSelectedServer')!;
@@ -239,7 +260,7 @@ export class AppComponent {
           }
         );
 
-        this.selectedShoppingList = this.fileList[0].value;
+        this.getMaybeUpdateSelectedShoppingList();
         this.updateTableData();
       }
     );
