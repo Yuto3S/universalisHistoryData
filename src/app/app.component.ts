@@ -67,39 +67,37 @@ export class AppComponent {
         jsonData["columns"].map((element: any) => this.columnDefs.push({field: element}));
         this.rowData$ = jsonData["items"];
 
-        this.columnDefs[1] = {
-          field: "Average Price",
-          cellStyle: params => {
-            let averageList = this.getAverageItemInfoList(jsonData["items"], "Average Price");
-            let min = Math.min(...averageList);
-            let max = Math.max(...averageList);
-            let weight = (params.value - min)/(max - min);
-            let green = weight * 255;
-            return { backgroundColor: `rgb(0, ${green}, 0, 0.5)` };
-          }
+        let columnsToIncludeHighlight = [
+          "Average Price",
+          "Total Market",
+          "Total Quantity",
+          "Price/Cost",
+          "Gil/Venture"
+        ]
+        let columnsToUpdateWithIndex: any[] = [];
+
+        for (const [index, column] of this.columnDefs.entries()) {
+          let field: string = column.field!;
+          if(columnsToIncludeHighlight.includes(field)){
+            columnsToUpdateWithIndex.push([index, field])
+          };
         }
-        this.columnDefs[2] = {
-          field: "Total Market",
-          cellStyle: params => {
-            let averageList = this.getAverageItemInfoList(jsonData["items"], "Total Market");
-            let min = Math.min(...averageList);
-            let max = Math.max(...averageList);
-            let weight = (params.value - min)/(max - min);
-            let green = weight * 255;
-            return { backgroundColor: `rgb(0, ${green}, 0, 0.5)` };
+
+        columnsToUpdateWithIndex.forEach((entry: any) => {
+          this.columnDefs[entry[0]] = {
+            field: entry[1],
+            cellStyle: params => {
+              let averageList = this.getAverageItemInfoList(jsonData["items"], entry[1]);
+              let min = Math.min(...averageList);
+              let max = Math.max(...averageList);
+              let weight = (params.value - min)/(max - min);
+              let green = weight * 255;
+              let red = (1-weight) * 128;
+              return { backgroundColor: `rgb(${red}, ${green}, 0, 0.5)` };
+            }
           }
-        }
-        this.columnDefs[3] = {
-          field: "Total Quantity",
-          cellStyle: params => {
-            let averageList = this.getAverageItemInfoList(jsonData["items"], "Total Quantity");
-            let min = Math.min(...averageList);
-            let max = Math.max(...averageList);
-            let weight = (params.value - min)/(max - min);
-            let green = weight * 255;
-            return { backgroundColor: `rgb(0, ${green}, 0, 0.5)` };
-          }
-        }
+          console.log(entry[0], entry[1]);
+        });
       }
     );
   }
