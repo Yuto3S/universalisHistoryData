@@ -16,6 +16,7 @@ export interface DialogData {
   totalMarket: number;
   totalSold: number;
   id: number;
+  lodestoneId: string;
 }
 
 @Component({
@@ -64,8 +65,18 @@ export class AppComponent {
     fetch(`https://raw.githubusercontent.com/Yuto3S/universalisHistoryDataGenerator/main/assets/generated/history/${this.selectedServer}/${this.selectedTimeFrame}/${this.selectedDate}/${this.selectedShoppingList}`).then(res => res.json()).then(
       jsonData => {
         this.columnDefs = [];
+        this.rowData$ = [];
         jsonData["columns"].map((element: any) => this.columnDefs.push({field: element}));
-        this.rowData$ = jsonData["items"];
+        jsonData["items"].map((item_entry: any) => {
+          if(item_entry["Total Market"] == 0){
+            // We are skipping this element, it is not worth displaying it in the table.
+            // TODO: Add text with elements skipped.
+            console.log(item_entry);
+          } else {
+            this.rowData$!.push(item_entry);
+          }
+        });
+//         this.rowData$ = jsonData["items"];
 
         let columnsToIncludeHighlight = [
           "Average Price",
@@ -268,7 +279,7 @@ export class AppComponent {
     this.selectedItem = {
       data: e.data,
       linkHref: `https://universalis.app/market/${e.data['id']}`,
-      linkDisplayedText: e.data['Item Name']
+      linkDisplayedText: e.data['Name']
     }
 
     console.log(e.data);
@@ -276,10 +287,11 @@ export class AppComponent {
       const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
         data: {
           averagePrice: e.data["Average Price"],
-          name: e.data["Item Name"],
+          name: e.data["Name"],
           totalMarket: e.data["Total Market"],
           totalSold: e.data["Total Sold"],
-          id: e.data["id"]
+          id: e.data["id"],
+          lodestoneId: e.data["lodestone_id"]
         },
       });
   }
